@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="description" content="Escuela de Sipalki Córdoba">
+    <meta name="author" content="Matías Iturburu <maturburu@gmail.com>; Ana Comes <anacomes@gmail.com>">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{static_url}}css/style.css" />
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="wrapper">
+    <header>
+    <h1 id="logo"><a href="/"><img src="{{static_url}}img/logo.png" /></a></h1>
+    <ul id="nav">
+        {% block nav %}
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sipalki</a></li>
+        <li><a href="#">Escuela</a></li>
+        <li><a href="#">Contacto</a></li>            
+        {% endblock %}
+    </ul>
+    </header>
+    <form id="contact-form" action="/contact" method="post">{% csrf_token %}
+        <p {% if form.email.errors %}class="error"{% endif %}><input type="text" name="email" value="Email" class="text" placeholder="Email"/></p>
+        <p {% if form.message.errors %}class="error"{% endif %}><textarea name="message" rows="8" cols="40" class="text" placeholder="Mensaje">Mensaje</textarea></p>
+        <p><input type="submit" value="Enviar" /></p>
+    </form>
+    <section>
+    {% block content %}
+        
+    {% endblock %}
+    </section>
+    <footer>
+        <div id="colophon">Sipalki Córdoba - Córdoba, Argentina</div>
+        <div id="credit"><a href="http://potajecreativo.com.ar/" target="blank">potaje creativo</a></div>
+    </footer>
+</div>    
+</body>
+</html>
