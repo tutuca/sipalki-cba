@@ -1,7 +1,185 @@
-body{
-    font: 100% sans-serif;
-    background:#FFF;
+@font-face {
+    font-family: 'FrankGoth';
+    src: url("../fonts/TT0244M.TTF");
+}
+@font-face {
+    font-family: 'FrankGothHv';
+    src: url("../fonts/FRAHV.TTF");
+}
+@font-face {
+    font-family: 'FrankGothCn';
+    src: url("../fonts/FRADMCN.TTF");
+}
+@font-face {
+    font-family: 'FrankGothMdCn';
+    src: url("../fonts/FRAMDCN.TTF");
+}
+body {
+    font: 100% Helvetica, Arial, Verdana, sans-serif;
+    background: #000;
+    color: #FFF;
+    margin: 0;
+    padding:0;
+}
+a {
+    text-decoration:none;
+    color: #53777A;
+}
+h1 {
+    font: 5em 'FrankGoth', Helvetica, Arial, sans-serif;
     margin:0;
-    padding:0;    
+}
+h2 {
+    font: 4em 'FrankGothMdCn', Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    margin:0;
+    color: #000;
+}
+h2 strong{
+    font: 100% 'FrankGothCn', Helvetica, Arial, sans-serif;
+    line-height:60%;
+    display:block;
+    color: #F6B202;
+    
+}
+header, footer, section {
+    display:block;
+}
+header {
+    text-align:center;
+    padding: 3em 0;
+    border-bottom: 15px solid #815600;
+}
+header a{
+    color: #FFF;
+    text-transform:uppercase;
+
+}
+header p {
+    font: 100% 'FrankGothMdCn', Helvetica, Arial, sans-serif;
+    letter-spacing: 4px;
+}
+nav {
+    position: fixed;
+    width:100%;
+    top:0;
+    display:block;
+    background: rgba(0,0,0,0.5)
+}
+nav div {
+    display: block;
+    float: left;
+    left: 50%;
+    position: relative;
+}
+nav ul {
+    display: block;
+    float: left;
+    left: -50%;
+    position: relative;
+    margin: 0;
+    padding:0;
+    overflow:hidden;
+    list-style:none;
+}
+nav li {
+    float:left;
+    margin: 0 1em;
+    padding: 0.5em;
 }
 
+section {
+    margin: 0 auto;
+    padding: 2em 2em 0.5em;
+    background: #FFF;
+    color: #000;
+}
+footer {
+    margin: 4em auto 0;
+    overflow:hidden;
+}
+footer strong {
+    float:left;
+}
+footer a {
+    float:right;
+}
+strong {
+    color: #F6B202;
+}
+form {
+}
+label {
+   display: block;
+}
+input[type='text'], 
+textarea {
+    width: 400px;
+    background: #FFF;
+    border:0;
+    color:#000;
+    font: 20px Helvetica, Arial, Verdana, sans-serif;
+
+}
+input[type='text']:hover, 
+textarea:hover {
+    background: #CCC;
+}
+input[type='submit']{
+    width: 400px;
+    background: #333;
+    border:1px solid #333;
+    border-radius: 3px;
+    color: #FFF;
+    font: 20px Helvetica, Arial, Verdana, sans-serif;
+    cursor:pointer;
+}
+input[type='submit']:hover {
+    background:#555;
+    border:1px solid #555;
+}
+#contact-form {
+    background: #939393;
+}
+#wrapper {
+    width: 960px;
+    margin: 0 auto;
+    background: url(../img/background.png) no-repeat;
+}
+#sipalki-mundial {
+    float:left;
+}
+#sipalki-nordeste {
+    float:right;
+}
+#sobre-sipalki {
+    background: rgba(113,24,33,0.5);
+    border-bottom:15px solid #711821;
+}
+.clear {
+    display:block;
+    margin:0;
+    clear:both;
+}
+.content h1{
+    color: #FFF;
+    font-family: 'FrankGothHv', Helvetica, sans-serif;
+    font-size:3em;
+    text-transform: uppercase;
+}
+.content h2{
+    color: #FFF;
+    font-family: 'FrankGothHv', Helvetica, sans-serif;
+    font-size:2em;
+    text-transform: uppercase;
+}
+.col {
+    float: left;
+    width: 45%;
+}
+.left {
+    float: left;
+}
+.right {
+    float:right;
+}
