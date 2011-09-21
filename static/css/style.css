@@ -16,10 +16,10 @@
 }
 body {
     font: 100% Helvetica, Arial, Verdana, sans-serif;
-    background: #000;
     color: #FFF;
     margin: 0;
     padding:0;
+    background: #f9d78c url(../img/background.png) no-repeat top center;
 }
 a {
     text-decoration:none;
@@ -48,6 +48,7 @@ header, footer, section {
 header {
     text-align:center;
     padding: 3em 0;
+    background: rgba(0, 0, 0, 0.35);
     border-bottom: 15px solid #815600;
 }
 header a{
@@ -58,7 +59,14 @@ header a{
 header p {
     font: 100% 'FrankGothMdCn', Helvetica, Arial, sans-serif;
     letter-spacing: 4px;
+    margin: 0;
 }
+header h2 {
+    margin: 0;
+}
+header h1 {
+    margin: 0.5em auto 0
+} 
 nav {
     position: fixed;
     width:100%;
@@ -138,13 +146,10 @@ input[type='submit']:hover {
     background:#555;
     border:1px solid #555;
 }
-#contact-form {
-    background: #939393;
-}
-#wrapper {
+.wrapper {
     width: 960px;
     margin: 0 auto;
-    background: url(../img/background.png) no-repeat;
+
 }
 #sipalki-mundial {
     float:left;
@@ -152,7 +157,7 @@ input[type='submit']:hover {
 #sipalki-nordeste {
     float:right;
 }
-#sobre-sipalki {
+#sipalki {
     background: rgba(113,24,33,0.5);
     border-bottom:15px solid #711821;
 }
@@ -182,4 +187,11 @@ input[type='submit']:hover {
 }
 .right {
     float:right;
+}
+
+#contacto {
+    background: #939393;
+}
+#fotos{
+    background: #222;
 }
