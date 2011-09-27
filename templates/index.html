@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>Escuela de Sipalki-Do Córdoba</title>
+    <meta name="description" content="Escuela de Sipalki-Do Córdoba">
+    <meta name="author" content="Matías Iturburu <maturburu@gmail.com>; Ana Comes <anacomes@gmail.com>">
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/css/style.css" />
+    <link rel="icon" type="image/png" href="/static/img/favicon.ico" />
+    <script src="/static/js/jquery.min.js" type="text/javascript" language="javascript"></script>
+    <script src="/static/js/scrollTo.js" type="text/javascript" language="javascript"></script>
+    <script src="/static/js/scripts.js" type="text/javascript" language="javascript"></script>
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <nav>
+        <div >
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sipalki">Sipalki</a></li>
+            <li><a href="#fotos">Fotos</a></li>
+            <li><a href="#contacto">Contacto</a></li>            
+        </ul>
+        </div>
+    </nav>
+    <header id="home">
+    <div class="wrapper">
+    <h1 id="logo"><a href="/"><img src="/static/img/logo.png" /></a></h1>
+    <h2><strong>Sipalki - do</strong>C ó r d o b a</h2>
+    <a href="http://sipalki-mundial.com" id="sipalki-mundial"><img src="/static/img/sipalki-mundial.png" width="137" /></a>
+    <a href="http://sipalki-nordeste.com" id="sipalki-nordeste"><img src="/static/img/sipalki-nordeste.png" width="137" /></a>
+
+    <p>ESCUELA DE SIPALKI-DO CÓRDOBA<br />SABOM RAUL MANFROTTO 4to Dan</p>
+    <br class="clear"/>
+    </div>
+    </header>
+    <section id="sipalki" class="content">
+    <div class="wrapper">
+    <h1>Sipalki - Do</h1>
+    <article class="col left">
+        <h2>Orígenes</h2>
+        <p>Sipalki-do es la expresión traducida de la palabra coreana que significa <strong>dieciocho técnicas</strong> Sipal (dieciocho), Ki (técnica), do (camino) en el sentido del sendero del conocimiento y el equilibrio tanto exterior como interior.</p>
+        <p>El sipalki-do es un arte marcial que surge de la suma de las técnicas Guerreras del antiguo pueblo peninsular coreano-mongol que utiliza como armas naturales partes del cuerpo y también una buena cantidad de armas.</p>
+        <p>En la practica de este milenario arte se desarrollan tres técnicas sin el uso de armas y quince con uso de armas, con respecto a las primeras se practica defensa personal y combate con manos vacías en dos variaciones, lucha de uno contra uno y lucha contra varios oponentes y la tercera técnica sin armas es meditación. Las técnicas con uso de armas se refieren a: Palo Corto, Palo Largo, Palo Articulado, Sable, Espada, Cuchillo, Dos Cuchillos, Lanza, Hacha, Látigo, Manopla, Cinta o Soga, Escudo, Arquería y Bayoneta,</p>
+    </article>
+    <article class="col right">
+        <h2>¿Por qué practicarlo?</h2>
+        <p>El sipalki-do es un arte marcial que se practica con el fin netamente marcial, lo que implica una formación dentro de principios éticos y morales que permiten un complemento a los inculcados en la familia, además de dotar al practicante de un eficaz método milenario de defensa para ser utilizado en momentos extremos que lo requieran.</p>
+        <p>No nos interesa formar soldados, aunque este arte marcial tiene la estructura militar heredada del ejercito mongol, sino ayudar a cada interesado en practicarlo, en lo físico y mental.</p>
+        <h2>¿Quienes pueden?</h2>
+        <p>El sipalki-do no pone limitaciones a las personas porque este se adapta a cada uno de los practicantes, por lo que lo pueden hacer los niños como también las personas adultas, y sin distinción de sexo.</p>
+        <p>La única limitación para la practica es la intención de utilizar el sipalki-do como un instrumento para la agresión al indefenso.</p>
+    </article>
+    <br class="clear"/>
+    </div>
+    </section>
+    <section id="fotos" class="content">
+    <div class="wrapper">
+    <h1>La Escuela</h1>
+    <ul id="pictures">
+      <F3:repeat group="{{@albums}}" value="{{@album}}">
+        <li>
+            <a href="/album/{{@album.id}}">
+                <img src="http://farm{{@album.photo.farm}}.static.flickr.com/{{@album.photo.server}}/{{@album.photo.id}}_{{@album.photo.secret}}_s.jpg">
+            </a>
+        </li>
+      </F3:repeat>
+    </ul>
+    </div>
+    </section>
+    <section id="contacto" class="content">
+    <div class="wrapper">
+    <h1>Horarios</h1>
+    <dl>
+      <dt>
+        <p>Prof. Sabom Nim Demis Picone 1er Dan</p>
+        <p>Prof. Sabom Nim Raúl Manfrotto 4er Dan</p>
+        <h4>Gimnasio Abitus, 9 de Julio 886 Centro</h4>
+      </dt>
+      <dd>
+        <table>
+          <tr>
+            <th>Mar</th><th>Mie</th><th>Jue</th><th>Vie</th>
+          </tr>
+          <tr>
+            <td>18HS</td><td>21HS</td><td>18HS</td><td>21HS</td>
+          </tr>
+        </table>
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        <p>Prof. Sabom Nim Franco Simonetta 1er Dan</p>
+        <h4>Gimnasio C.E.M.A.D.E.F. Gabino Blanco 2495 Alto Alberdi</h4>
+      </dt>
+      <dd>
+        <table>
+          <tr>
+            <th>Lun</th><th>Jue</th>
+          </tr>
+          <tr>
+            <td>11HS</td><td>11HS</td>
+          </tr>
+        </table>
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        <p>Prof. Sabom Nim Martin Martinez 2er Dan</p>
+        <h4>Ruta 5 KM 28 Villa del Prado Alta Gracia</h4>
+      </dt>
+      <dd>
+        <table>
+          <tr>
+            <th>Lun</th><th>Jue</th>
+          </tr>
+          <tr>
+            <td>21:30HS</td><td>21:30HS</td>
+          </tr>
+        </table>
+      </dd>
+    </dl>
+    <h1>Contacto</h1>
+    <article class="col right">
+        <h2>0351 153465269</h2>
+        <h4>Sabom Manfrotto</h4>
+        <h2>0351 4227233</h2>
+        <h2>sipalkicba@gmail.com</h2>
+    </article>
+    <form action="/contact" method="post">
+        <p><label for="name">Nombre</label><input type="text" id="name" name="name" /></p>
+        <p><label for="email">Email</label><input type="text" id="email" name="email" /></p>
+        <p><label for="message">Mensaje</label><textarea id="message" name="message" ></textarea></p>
+        <p><input type="submit" value="Enviar" /></p>
+    </form>
+    </div>
+    </section>
+    <footer>
+        <div id="colophon">Sipalki Córdoba - Córdoba, Argentina</div>
+        <div id="credit"><a href="http://potajecreativo.com.ar/" target="blank">potaje creativo</a></div>
+    </footer>
+</body>
+</html>

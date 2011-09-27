@@ -42,6 +42,9 @@ h2 strong{
     color: #F6B202;
     
 }
+h4 {
+    text-transform: uppercase;
+}
 header, footer, section {
     display:block;
 }
@@ -49,7 +52,7 @@ header {
     text-align:center;
     padding: 3em 0;
     background: rgba(0, 0, 0, 0.35);
-    border-bottom: 15px solid #815600;
+    border-bottom: 30px solid #815600;
 }
 header a{
     color: #FFF;
@@ -92,10 +95,19 @@ nav ul {
 }
 nav li {
     float:left;
-    margin: 0 1em;
-    padding: 0.5em;
+    margin: 0;
+    padding: 0;
 }
-
+nav a{
+    color: #FFF;
+    font-weight: bold;
+    display: block;
+    padding: 0.5em 3em;
+}
+nav a:hover {
+    background: #53777A;
+    color: #FFF;
+}
 section {
     margin: 0 auto;
     padding: 2em 2em 0.5em;
@@ -159,7 +171,7 @@ input[type='submit']:hover {
 }
 #sipalki {
     background: rgba(113,24,33,0.5);
-    border-bottom:15px solid #711821;
+    border-bottom:30px solid #711821;
 }
 .clear {
     display:block;
@@ -171,6 +183,7 @@ input[type='submit']:hover {
     font-family: 'FrankGothHv', Helvetica, sans-serif;
     font-size:3em;
     text-transform: uppercase;
+    margin-bottom: 0.5em;
 }
 .content h2{
     color: #FFF;
@@ -192,6 +205,63 @@ input[type='submit']:hover {
 #contacto {
     background: #939393;
 }
+dl p {
+    margin: 0;
+}
+table {
+    width: 100%;
+    vertical-align: middle;
+    padding: 2em 0;
+}
+dl {
+    border: 5px solid #FFF;
+    border-width: 5px 0;
+    overflow: hidden;    
+}
+
+dt {
+    background: #FFF;
+    color: #939393;
+    float: left;
+    padding: 1em;
+    width: 45%;
+    height: 6em
+}
+dd {
+    color: #FFF;
+    float: right;
+    margin:0;
+    width: 50%;
+    text-align:middle
+}
+td {
+    text-align: center;
+}
+
 #fotos{
     background: #222;
+    border-bottom: 30px solid #000;
 }
+#pictures {
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    list-style:none;
+}
+#pictures li {
+    float: left;
+    margin: 1em;
+}
+#pictures li:first-child {
+    margin-left:0;
+}
+#pictures a {
+    padding: 1em;
+    height: 75px;
+    background: #FFF;
+    display: block;
+}
+#pictures a:hover {
+    background: #53777A;
+}
+
