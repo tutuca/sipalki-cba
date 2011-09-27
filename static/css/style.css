@@ -51,7 +51,7 @@ header, footer, section {
 header {
     text-align:center;
     padding: 3em 0;
-    background: rgba(0, 0, 0, 0.35);
+    background: rgba(0,0,0,0.5);
     border-bottom: 30px solid #815600;
 }
 header a{
@@ -115,14 +115,26 @@ section {
     color: #000;
 }
 footer {
-    margin: 4em auto 0;
+    margin: 0 auto;
     overflow:hidden;
+    background: #111;
+    padding: 1em 0;
 }
 footer strong {
     float:left;
 }
 footer a {
     float:right;
+    position: relative;
+}
+footer a:hover {
+    color: #FFF;
+    text-shadow: 0 0 2px #FF0;
+}
+footer img {
+    position:absolute;
+    left: -38px;
+    top: -5px;
 }
 strong {
     color: #F6B202;
@@ -140,6 +152,9 @@ textarea {
     color:#000;
     font: 20px Helvetica, Arial, Verdana, sans-serif;
 
+}
+textarea {
+    height: 6em;
 }
 input[type='text']:hover, 
 textarea:hover {
@@ -202,8 +217,28 @@ input[type='submit']:hover {
     float:right;
 }
 
+#horarios {
+    background: #8EA6B0;
+    border-bottom: 30px solid #5F6F75;
+}
 #contacto {
     background: #939393;
+}
+#contacto h2 {
+    margin-bottom:0;
+}
+#contacto h3 {
+    text-transform: uppercase;
+    color: #FFF;
+    margin-top:0;
+}
+#email-address {
+    text-transform: none;
+}
+#email-address strong {
+    font: 1.5em 'FrankGothHv', Helvetica, Arial, sans-serif;
+    color:#fff;
+    display:block;
 }
 dl p {
     margin: 0;
@@ -211,7 +246,7 @@ dl p {
 table {
     width: 100%;
     vertical-align: middle;
-    padding: 2em 0;
+    padding: 2em 0 0;
 }
 dl {
     border: 5px solid #FFF;
@@ -223,15 +258,16 @@ dt {
     background: #FFF;
     color: #939393;
     float: left;
+    margin: 0.5em 0;
     padding: 1em;
-    width: 45%;
-    height: 6em
+    width: 50%;
 }
 dd {
     color: #FFF;
     float: right;
-    margin:0;
-    width: 50%;
+    margin: 0.5em;
+    padding: 1em;
+    width: 40%;
     text-align:middle
 }
 td {
