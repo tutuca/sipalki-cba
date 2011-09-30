@@ -29,4 +29,36 @@ Hace falta poner la configuración de email, flickr y facebook en un archivo
     UI="templates/"
     AUTOLOAD="classes/"
 
-> Los path son relativos a la ubicación del index.php
+> Las rutas son relativas a la ubicación del index.php
+
+Configuración de apache, corregir las rutas a los archivos:
+
+
+    <VirtualHost *:8083>
+	    ServerName sipalki_tmp
+	    ServerAlias sipalki_tmp
+	    DocumentRoot /PATH_TO_PROJECT/
+	    <Directory />
+		    Options -Indexes FollowSymLinks Includes
+		    AllowOverride All
+		    Order allow,deny
+		    allow from all
+	    </Directory>
+
+	    ErrorLog /USER_HOME/PROJECT_NAME.error.log
+
+	    # Possible values include: debug, info, notice, warn, error, crit,
+	    # alert, emerg.
+	    LogLevel warn
+
+	    CustomLog /USER_HOME/PROJECT_NAME.access.log combined
+    </VirtualHost>
+
+`.httaccess` de ejemplo
+
+    # Enable rewrite engine and route requests to framework
+    RewriteEngine On
+    RewriteBase /
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule .* index.php [L,QSA]
