@@ -1,0 +1,7 @@
+MIME-Version: 1.0
+Content-type: text/html; charset=utf-8
+From:"{{@name}}" <{{@email}}>
+To: <{{@to}}>
+Subject: {{@subject}}
+
+<p>{{@message}}</p>
