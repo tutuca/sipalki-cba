@@ -108,6 +108,9 @@ nav a:hover {
     background: #53777A;
     color: #FFF;
 }
+nav .current a{
+    background:#8EA6B0;
+}
 section {
     margin: 0 auto;
     padding: 2em 2em 0.5em;
@@ -301,3 +304,6 @@ td {
     background: #53777A;
 }
 
+#slider {
+    display:none;
+}

@@ -1,7 +1,13 @@
 $(document).ready(function(){
-    $('nav a').click(function(){
+    $('nav').onePageNav({changeHash: true});
+    $('#pictures a').click(function(){
+        $('#slider').remove();
         target = $(this).attr('href');
-        $.scrollTo(target, {duration:500, axis:'y'});
+        slider = $('<div>').attr('id', 'slider');
+        $(slider).load(target);
+        $('#pictures').after(slider);
+        $('#slider').lightbox();
+        $('#slider a:first').click();
         return false;
     })
 })
