@@ -31,7 +31,7 @@ class Main extends F3instance {
         $params = array(
             'photoset_id' => $this->get('PARAMS["album_id"]'),
             'method' => 'flickr.photosets.getPhotos',
-            'extras' => 'url_m, url_t'
+            'extras' => 'url_z, url_t'
         );
         $response = unserialize(Flickr::makeCall($params));
         foreach ($response['photoset']['photo'] as $value){
