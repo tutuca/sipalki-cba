@@ -17,7 +17,7 @@ $app->route('POST /contacto',
         $mail=new SMTP(
             $app->get('SMTP_SERVER'),
             $app->get('SMTP_PORT'),
-            NULL,
+            $app->get('SMTP_ENC'),
             $app->get('ADMIN_EMAIL'),
             $app->get('ADMIN_PASSWORD')
         );
