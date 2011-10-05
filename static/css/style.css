@@ -305,19 +305,5 @@ td {
 }
 
 #slider {
-    position:absolute;
-    top:0;
-    left:0;
-    height:100%;
-    width:100%;
-    z-index:9999;
-    background:rgba(0,0,0,0.5)
-}
-#slider:hover {
-    cursor:pointer;
-}
-#slider-wrapper {
-    width:90%;
-    margin:0 auto;
-    height:
+    display:none;
 }
