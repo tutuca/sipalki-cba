@@ -18,6 +18,19 @@
     <!--[if IE]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-20150902-2']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
 </head>
 <body>
     <nav>
@@ -27,21 +40,25 @@
             <li><a href="#sipalki">Sipalki</a></li>
             <li><a href="#fotos">Fotos</a></li>
             <li><a href="#horarios">Horarios</a></li>
-            <li><a href="#contacto">Contacto</a></li>            
+            <li><a href="#contacto">Contacto</a></li>
+            <li id="social">
+                <a href="http://youtube.com/sipalkicba" title="Suscribite a nuestro canal de youtube"><img src="/static/img/boton-youtube.png" /></a>
+                <a href="http://facebook.com/sipalkicba" title="Agreganos en Facebook"><img src="/static/img/boton-facebook.png" /></a>
+            </li>
+            
         </ul>
         </div>
     </nav>
-    <header id="home">
+    <section id="home">
     <div class="wrapper">
     <h1 id="logo"><a href="/"><img src="/static/img/logo.png" /></a></h1>
-    <h2><strong>Sipalki - do</strong>C ó r d o b a</h2>
     <a href="http://sipalki-mundial.com" id="sipalki-mundial"><img src="/static/img/sipalki-mundial.png" width="137" /></a>
     <a href="http://sipalki-nordeste.com" id="sipalki-nordeste"><img src="/static/img/sipalki-nordeste.png" width="137" /></a>
 
     <p>ESCUELA DE SIPALKI-DO CÓRDOBA<br />SABOM RAUL MANFROTTO 4to Dan</p>
     <br class="clear"/>
     </div>
-    </header>
+    </section>
     <section id="sipalki" class="content">
     <div class="wrapper">
     <h1>Sipalki - Do</h1>
@@ -69,7 +86,7 @@
       <repeat group="{{@albums}}" value="{{@album}}">
         <li>
             <a href="/album/{{@album.id}}">
-                <img src="http://farm{{@album.photo.farm}}.static.flickr.com/{{@album.photo.server}}/{{@album.photo.id}}_{{@album.photo.secret}}_s.jpg">
+                <img src="http://farm{{@album.photo.farm}}.static.flickr.com/{{@album.photo.server}}/{{@album.photo.id}}_{{@album.photo.secret}}_m.jpg">
             </a>
         </li>
       </repeat>
@@ -147,7 +164,6 @@
         </p>
     </article>
     <form action="/contacto" method="post">
-        <p><label for="name">Nombre</label><input type="text" id="name" name="name" /></p>
         <p><label for="email">Email</label><input type="text" id="email" name="email" /></p>
         <p><label for="message">Mensaje</label><textarea id="message" name="message" ></textarea></p>
         <p><input type="submit" value="Enviar" /></p>

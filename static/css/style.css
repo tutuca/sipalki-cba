@@ -45,31 +45,9 @@ h2 strong{
 h4 {
     text-transform: uppercase;
 }
-header, footer, section {
+footer, section {
     display:block;
 }
-header {
-    text-align:center;
-    padding: 3em 0;
-    background: rgba(0,0,0,0.5);
-    border-bottom: 30px solid #815600;
-}
-header a{
-    color: #FFF;
-    text-transform:uppercase;
-
-}
-header p {
-    font: 100% 'FrankGothMdCn', Helvetica, Arial, sans-serif;
-    letter-spacing: 4px;
-    margin: 0;
-}
-header h2 {
-    margin: 0;
-}
-header h1 {
-    margin: 0.5em auto 0
-} 
 nav {
     position: fixed;
     width:100%;
@@ -102,7 +80,7 @@ nav a{
     color: #FFF;
     font-weight: bold;
     display: block;
-    padding: 0.5em 3em;
+    padding: 0.5em 2em;
 }
 nav a:hover {
     background: #53777A;
@@ -111,9 +89,14 @@ nav a:hover {
 nav .current a{
     background:#8EA6B0;
 }
+#social a {
+    padding: 0.5em;
+    display:inline; 
+    vertical-align:middle;
+}
 section {
     margin: 0 auto;
-    padding: 2em 2em 0.5em;
+    padding: 3em 2em;
     background: #FFF;
     color: #000;
 }
@@ -146,6 +129,8 @@ form {
 }
 label {
    display: block;
+   text-transform:uppercase;
+   font-size:80%;
 }
 input[type='text'], 
 textarea {
@@ -157,7 +142,7 @@ textarea {
 
 }
 textarea {
-    height: 6em;
+    height: 9em;
 }
 input[type='text']:hover, 
 textarea:hover {
@@ -220,6 +205,27 @@ input[type='submit']:hover {
     float:right;
 }
 
+#home {
+    text-align:center;
+    background: rgba(0,0,0,0.5);
+    border-bottom: 30px solid #815600;
+}
+#home a{
+    color: #FFF;
+    text-transform:uppercase;
+
+}
+#home p {
+    font: 100% 'FrankGothMdCn', Helvetica, Arial, sans-serif;
+    letter-spacing: 4px;
+    margin: 0;
+}
+#home h2 {
+    margin: 0;
+}
+#home h1 {
+    margin: 0.5em auto 0
+}
 #horarios {
     background: #8EA6B0;
     border-bottom: 30px solid #5F6F75;
@@ -228,20 +234,26 @@ input[type='submit']:hover {
     background: #939393;
 }
 #contacto h2 {
-    margin-bottom:0;
+    margin-bottom: 0;
+    font-family: 'FrankGothCn', sans-serif;
+    font-size: 3em;
+    line-height: 1em;
 }
 #contacto h3 {
     text-transform: uppercase;
+    font-family: 'FrankGothCn', sans-serif;
     color: #FFF;
-    margin-top:0;
+    margin-top: 0;
 }
 #email-address {
     text-transform: none;
+    font-size:2.5em;
 }
 #email-address strong {
     font: 1.5em 'FrankGothHv', Helvetica, Arial, sans-serif;
     color:#fff;
     display:block;
+    line-height:0.7em;
 }
 dl p {
     margin: 0;
@@ -295,10 +307,13 @@ td {
     margin-left:0;
 }
 #pictures a {
-    padding: 1em;
-    height: 75px;
+    padding: 0;
+    height: 125px;
     background: #FFF;
     display: block;
+    width: 125px;
+    overflow: hidden;
+    text-align: center;
 }
 #pictures a:hover {
     background: #53777A;
