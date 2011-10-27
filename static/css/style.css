@@ -45,6 +45,40 @@ h2 strong{
 h4 {
     text-transform: uppercase;
 }
+dl p {
+    margin: 0;
+}
+table {
+    width: 100%;
+    vertical-align: middle;
+    padding: 2em 0 0;
+}
+dl {
+    border: 5px solid #FFF;
+    border-width: 5px 0;
+    overflow: hidden;    
+}
+
+dt {
+    background: #FFF;
+    color: #939393;
+    float: left;
+    margin: 0.5em 0;
+    padding: 1em;
+    width: 50%;
+}
+dd {
+    color: #FFF;
+    float: right;
+    margin: 0.5em;
+    padding: 1em;
+    width: 40%;
+    text-align:middle
+}
+td {
+    text-align: center;
+}
+
 footer, section {
     display:block;
 }
@@ -85,15 +119,12 @@ nav a{
 nav a:hover {
     background: #53777A;
     color: #FFF;
+    text-shadow: 0 1px 3px #000;
 }
 nav .current a{
     background:#8EA6B0;
 }
-#social a {
-    padding: 0.5em;
-    display:inline; 
-    vertical-align:middle;
-}
+
 section {
     margin: 0 auto;
     padding: 3em 2em;
@@ -166,16 +197,6 @@ input[type='submit']:hover {
     margin: 0 auto;
 
 }
-#sipalki-mundial {
-    float:left;
-}
-#sipalki-nordeste {
-    float:right;
-}
-#sipalki {
-    background: rgba(113,24,33,0.5);
-    border-bottom:30px solid #711821;
-}
 .clear {
     display:block;
     margin:0;
@@ -204,7 +225,31 @@ input[type='submit']:hover {
 .right {
     float:right;
 }
-
+#sipalki-mundial {
+    float:left;
+}
+#sipalki-nordeste {
+    float:right;
+}
+#social a {
+    padding: 0.5em;
+    display:inline; 
+    vertical-align:middle;
+}
+#social img {
+    vertical-align: middle;
+    margin: 5px;
+}
+#social a:hover {
+    background: transparent;
+}
+#social a:hover img {
+    border-radius: 15px;
+    box-shadow: 0 0 6px #FFF;
+}
+#social-icons {
+    text-align:right;
+}
 #home {
     text-align:center;
     background: rgba(0,0,0,0.5);
@@ -216,15 +261,22 @@ input[type='submit']:hover {
 
 }
 #home p {
-    font: 100% 'FrankGothMdCn', Helvetica, Arial, sans-serif;
+    font: 2em 'FrankGothMdCn', Helvetica, Arial, sans-serif;
     letter-spacing: 4px;
     margin: 0;
+    text-shadow: 0 1px 3px black;
+    color: white;
+    padding: 1em;
 }
 #home h2 {
     margin: 0;
 }
 #home h1 {
     margin: 0.5em auto 0
+}
+#sipalki {
+    background: rgba(113,24,33,0.5);
+    border-bottom:30px solid #711821;
 }
 #horarios {
     background: #8EA6B0;
@@ -245,6 +297,9 @@ input[type='submit']:hover {
     color: #FFF;
     margin-top: 0;
 }
+#contacto .right {
+    width:36%;
+}
 #email-address {
     text-transform: none;
     font-size:2.5em;
@@ -254,39 +309,6 @@ input[type='submit']:hover {
     color:#fff;
     display:block;
     line-height:0.7em;
-}
-dl p {
-    margin: 0;
-}
-table {
-    width: 100%;
-    vertical-align: middle;
-    padding: 2em 0 0;
-}
-dl {
-    border: 5px solid #FFF;
-    border-width: 5px 0;
-    overflow: hidden;    
-}
-
-dt {
-    background: #FFF;
-    color: #939393;
-    float: left;
-    margin: 0.5em 0;
-    padding: 1em;
-    width: 50%;
-}
-dd {
-    color: #FFF;
-    float: right;
-    margin: 0.5em;
-    padding: 1em;
-    width: 40%;
-    text-align:middle
-}
-td {
-    text-align: center;
 }
 
 #fotos{
