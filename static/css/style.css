@@ -150,7 +150,7 @@ section {
 footer {
     margin: 0 auto;
     overflow:hidden;
-    background: #111;
+    background: #635457;
     padding: 1em 0;
 }
 footer strong {
@@ -182,26 +182,35 @@ label {
 input[type='text'], 
 textarea {
     width: 400px;
-    background: #FFF;
-    border:0;
-    color:#000;
+    background: #EEE;
+    border: 2px solid #CCC;
+    color: black;
     font: 20px Helvetica, Arial, Verdana, sans-serif;
+    border-radius: 4px;
+    box-shadow: 0 0 3px #000;
 
 }
 textarea {
     height: 9em;
 }
 input[type='text']:hover, 
-textarea:hover {
-    background: #CCC;
+textarea:hover,
+input[type='text']:focus, 
+textarea:focus {
+    background: #FFF;
+    border-color:#CCC;
+    outline:0;
 }
 input[type='submit']{
+    outline:0;
     width: 400px;
     background: #333;
     border:1px solid #333;
     border-radius: 3px;
+    text-transform: uppercase;
     color: #FFF;
-    font: 20px Helvetica, Arial, Verdana, sans-serif;
+    padding: 0.5em;
+    font: 80% Helvetica, Arial, Verdana, sans-serif;
     cursor:pointer;
 }
 input[type='submit']:hover {
@@ -324,7 +333,14 @@ input[type='submit']:hover {
 #email-address {
     text-transform: none;
     font-size:2.5em;
+    margin: 0.5em 0 0;
 }
+#email-address a {
+    color: #FFF;
+}
+#email-address a:hover, #email-address a:hover strong {
+    color: #53777A;
+} 
 #email-address strong {
     font: 1.5em 'FrankGothHv', Helvetica, Arial, sans-serif;
     color:#fff;
@@ -335,6 +351,9 @@ input[type='submit']:hover {
 #fotos{
     background: #222;
     border-bottom: 30px solid #000;
+}
+#fotos p {
+    color :#CCC;
 }
 #pictures {
     margin:0;
