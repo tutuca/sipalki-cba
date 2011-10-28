@@ -37,16 +37,16 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#sipalki">Sipalki</a></li>
-            <li><a href="#fotos">Fotos</a></li>
+            <li><a href="#fotos">Fotos y Videos</a></li>
             <li><a href="#horarios">Horarios</a></li>
             <li><a href="#contacto">Contacto</a></li>
-            <li id="social">
-                <a href="http://youtube.com/sipalkicba" title="Suscribite a nuestro canal de youtube"><img src="/static/img/youtube.png" height="24" /></a>
-                <a href="http://facebook.com/sipalkicba" title="Agreganos en Facebook"><img src="/static/img/facebook.png" height="24"/></a>
-            </li>
-            
         </ul>
         </div>
+        <p id="social">
+            <a href="http://youtube.com/sipalkicba" title="Suscribite a nuestro canal de youtube"><img src="/static/img/youtube.png" height="24" /></a>
+            <a href="http://facebook.com/sipalkicba" title="Agreganos en Facebook"><img src="/static/img/facebook.png" height="24"/></a>
+        </p>
+
     </nav>
     <section id="home">
     <div class="wrapper">
@@ -80,7 +80,8 @@
     </section>
     <section id="fotos" class="content">
     <div class="wrapper">
-    <h1>La Escuela</h1>
+    <h1>Fotos y Videos</h1>
+    <p>Hacé click en las fotos para ver las galerías</p>
     <ul id="pictures">
       <repeat group="{{@albums}}" value="{{@album}}">
         <li>
